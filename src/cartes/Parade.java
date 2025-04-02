@@ -1,9 +1,9 @@
+/*
 package cartes;
 
 public class Parade extends Bataille {
 
 	public Parade(Type type) {
-		// TODO Auto-generated constructor stub
 		super(type);
 	}
 	
@@ -13,4 +13,19 @@ public class Parade extends Bataille {
 	}
 
 
+}
+*/
+
+package cartes;
+
+public class Parade extends Bataille {
+
+    public Parade(Type type) {
+        super(type);
+    }
+
+    @Override
+    public String toString() {
+        return getType().getPara();                            // ✅ Utilisation correcte de `getType()`
+    }
 }
